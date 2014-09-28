@@ -1,98 +1,35 @@
 <html>
-	<header>
-		<title> MobilityAid </title>
-		<style> 
-			div.outerframe
-			{
-				background-color: #ffffff; 
-				position: absolute; 
-				left: 6%; 
-				width: 88%;
-				min-width: 100px;
-				height: 100%;
-				min-height: 100px;
-				margin-top: -10px; 
-				border: 4px solid #008f7f; 
-				border-radius: 10px;
-				border-bottom:none; 
-				border-top: none;
-			}
-			
-			 div.header
-			 {
-				background-color:#11cc7c; 
-				position: absolute; 
-				top:1.2%; 
-				left: 0.5%;
-				right: 0.5%;
-				height: 14%; 
-				opacity: 1; 
-				border: 2px ridge #11cc7c;
-				border-radius: 3px;
-			}
-			
-			div.headertext
-			{
-				background-color:#00cc7c; 
-				position: absolute; 
-				top:4%;
-				bottom: 4%;
-				left: 40%;  
-				opacity: 1; 
-				border: 1px solid #ffffff;
-				border-left: none;
-				border-right: none;
-				border-radius: 15px;
-				font-family: Comic Sans MS;
-				font-size: 60;
-				text-decoration: none;
-				text-align: left;
-				color: #ffffff;
-			 }
-			 
-			 div.NewsFeed
-			 {
-				background-color:#eeeeee; 
-				position: absolute; 
-				top:17%;
-				bottom: 2%;
-				left: 0.5%;
-				right: 0.5%;  
-				opacity: 0.9; 
-				border: 2px solid #dddddd;
-				border-radius: 2px;
-			 }
-			 
-			 div.CommentHeader
-			 {
-				background-color:#dddddd; 
-				position: absolute; 
-				top: 20%; 
-				left: 25%;
-				width: 30%;
-				opacity: 1;
-			}
-			 
-		</style>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Zama Aunty - Main</title>
+		<link rel="stylesheet" href="_/css/style.css" />
+		<script src="/_/js/vendor/modernizr.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,300,600,400|Merriweather:400,300,300italic,400italic' rel='stylesheet' type='text/css'>
+	</head>
+	<header class="global">
+		
 	</header>
-	<body bgcolor="#dddddd">
-		<div class="outerframe">
-			<div class="header">
-				<div class="headertext">
-					MobilityAid
-				</div>
-			</div>
+	<body>
+		<section class="outerframe">
 			
 			<div class="Newsfeed">
 				<div class="CommentHeader">
-					<br>
 					<form action="LoginForm.asp">
-					Username: <input type="text" name="usrname"><br>
-					Password: <input type="password" name="psswrd"> <br>
-					<p align="center"> <input type="button" value="Submit" onclick="location.href='Admin.html'"> </p>
+						<label for="usrname">Username: </label>
+						<input type="text" name="usrname"><br>
+						<label for="psswrd">Password: </label>
+						<input type="password" name="psswrd"> <br>
+						<p align="center"> <input type="button" value="Submit" onclick="location.href='Admin.html'"> </p>
 					</form>
 				</div>
 			</div>
-		</div>
+		</section>
+
+		<script src="/_/js/vendor/jquery.js"></script>
+		<script src="/_/js/foundation.min.js"></script>
+		<script>
+		    $(document).foundation();
+		</script>
 	</body>
 </html>

@@ -1,0 +1,237 @@
+<html>
+	<header>
+		<title> MobilityAid </title>
+		<style> 
+			div.outerframe
+			{
+				background-color: #ffffff; 
+				position: absolute; 
+				left: 6%; 
+				width: 88%;
+				min-width: 100px;
+				height: 140%;
+				min-height: 100px;
+				margin-top: -10px; 
+				border: 4px solid #008f7f; 
+				border-radius: 10px;
+				border-bottom:none; 
+				border-top: none;
+			}
+			
+			 div.header
+			 {
+				background-color:#11cc7c; 
+				position: absolute; 
+				top:1.2%; 
+				left: 0.5%;
+				right: 0.5%;
+				height: 10%; 
+				opacity: 1; 
+				border: 2px ridge #11cc7c;
+				border-radius: 3px;
+			}
+			
+			div.headertext
+			{
+				background-color:#00cc7c; 
+				position: absolute; 
+				top:4%;
+				bottom: 4%;
+				left: 40%;  
+				opacity: 1; 
+				border: 1px solid #ffffff;
+				border-left: none;
+				border-right: none;
+				border-radius: 15px;
+				font-family: Comic Sans MS;
+				font-size: 60;
+				text-decoration: none;
+				text-align: left;
+				color: #ffffff;
+			 }
+			 
+			 div.NewsFeed
+			 {
+				background-color:#eeeeee; 
+				position: absolute; 
+				top:14%;
+				bottom: 2%;
+				left: 0.5%;
+				right: 0.5%;  
+				opacity: 0.9; 
+				border: 2px solid #dddddd;
+				border-radius: 2px;
+			 }
+			 
+			 div.CommentHeader
+			 {
+				background-color:#dddddd; 
+				position: absolute; 
+				top: 12%; 
+				left: 1%;
+				width: 98%;
+				opacity: 1;
+				border: 3px solid #cccccc;
+				border-radius: 10px;
+			}
+			
+			div.InfoDisplay
+			 {
+				background-color:#dddddd; 
+				position: absolute; 
+				top: 42%; 
+				left: 1.5%;
+				width: 96.75%;
+				opacity: 1;
+				border: 3px solid #cccccc;
+				border-radius: 10px;
+			}
+			
+			p.Heading
+			{
+				font-family: MS Sans Serif;
+				font-size: 28;
+			}
+			 
+			
+		</style>
+	</header>
+	<body bgcolor="#dddddd">
+		<div class="outerframe">
+			<div class="header">
+				<div class="headertext">
+					MobilityAid
+				</div>
+			</div>
+			
+			<div class="Newsfeed">
+				<p class="Heading" align="center"> CALL RESPONSE CENTER </p>
+				<div class="CommentHeader">
+					<br>
+					<form action="NewClientForm.asp">
+					<table cellspacing="5" width="100%">
+						<tr>
+							<td>
+								First Name
+							</td>
+							<td>
+								<input type="text" name="fname" size="63" value="Fatimah">
+							</td>
+							<td>
+								Last Name
+							</td>
+							<td>
+								<input type="text" name="lname" size="64" value="Khan">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Address
+							</td>
+							<td colspan="3">
+								<input type="text" name="fname" size="145" value="1234 XYZ Street">
+							</td>
+						</tr>
+						<tr>
+							<td colspan="4">
+								<p align="right">
+									<input type="button" value="Search" onclick="">
+								</p>
+							</td>
+						</tr>
+					</table>
+					</form>
+				</div>
+			</div>
+			
+			<div class="InfoDisplay">
+				<table>
+					<table cellspacing="10" width="100%>
+						<tr>
+							<td colspan="8"> 
+								<b> Client Information </b>
+							</td>
+						</tr>
+						<tr>
+							<td>Fatimah</td>
+							<td>Khan</td>
+							<td>1-123-445-6548</td>
+							<td>1234 XYZ Street</td>
+							<td>Peshawar</td>
+						</tr>
+						<tr> <td colspan="8"> <hr> </td> </tr>
+						<tr>
+							<td colspan="8"> 
+								<b> Approved Escort Information </b>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Primary Escort
+							</td>
+							<td>
+								Wajida
+							</td>
+							<td>
+								Begum
+							</td>
+							<td>
+								1-234-534-2342
+							</td>
+							<td>
+								Call Attempted?: 
+								<input type="checkbox" name="CallAttempt1">
+							</td>
+							<td>
+								Affirmitive Response?: 
+								<input type="checkbox" name="Request1">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Secondary Escort
+							</td>
+							<td>
+								Haroona
+							</td>
+							<td>
+								Khatoon
+							</td>
+							<td>
+								1-534-623-2454
+							</td>
+							<td>
+								Call Attempted?: 
+								<input type="checkbox" name="CallAttempt2">
+							</td>
+							<td>
+								Affirmitive Response?: 
+								<input type="checkbox" name="Request2">
+							</td>
+						</tr>
+						<tr> <td colspan="8"> <hr> </td> </tr>
+						<tr>
+							<td colspan="8"> 
+								<b> Primary Contact Information </b>
+							</td>
+						</tr>
+						<tr>
+							<td>Abid</td>
+							<td>Khan</td>
+							<td>1-920-232-3445</td>
+							<td>Husband</td>
+						</tr>
+						<tr>
+							<td colspan="8">
+								<hr>
+								<p align="center"> 
+									<input type="button" value="Escort Request Complete" onclick="location.CallResponse3.html">
+									<input type="button" value="Cancel" onclick="location.href='ClientMain.html'"> 
+								</p> 
+							</td>
+						</tr>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>

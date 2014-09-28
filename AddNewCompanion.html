@@ -1,0 +1,96 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Zama Aunty - Add New Companion</title>
+		<link rel="stylesheet" href="_/css/style.css" />
+		<script src="/_/js/vendor/modernizr.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,300,600,400|Merriweather:400,300,300italic,400italic' rel='stylesheet' type='text/css'>
+	</head>
+	<header class="global">
+		<div class="row">
+		    <div class="columns large-6">
+		        <nav>
+		            <ul>
+		                <li>
+		                    <a class="fi-layout" href="/Admin.html">Dashboard</a>
+		                </li>
+		                <li>
+		                    <a class="fi-torso-female" href="/ClientMain.html">Clients</a>
+		                </li>
+		                <li>
+		                    <a class="current fi-torsos-female-male" href="/CompanionMain.html">Companions</a>
+		                </li>
+		            </ul>
+		        </nav>
+		    </div>
+		    <div class="columns large-2">
+		        <nav>
+		            <ul class="settings">
+		                <li>
+		                    <a href="javascript:void(0)">Settings</a>
+		                </li>
+		            </ul>
+		        </nav>
+		    </div>
+		</div>
+	</header>
+	<body>
+		<div class="outerframe">
+			
+			<div class="Newsfeed">
+				<p class="Heading" align="center"> New Companion </p>
+				<div class="CommentHeader">
+					<br>
+					<form action="NewCompanionForm.asp">
+					<table cellspacing="10">
+						<tr>
+							<td colspan="2"> 
+								<b> Companion Information </b>
+							</td>
+						</tr>
+						<tr>
+							<td>First Name: </td>
+							<td><input type="text" name="fname" size="30"></td>
+						</tr>
+						<tr>
+							<td>Last Name:</td>
+							<td><input type="text" name="lname" size="30"></td>
+						</tr>
+						<tr>
+							<td>Phone Number:</td>
+							<td><input type="tel" name="phone" size="11"></td>
+						</tr>
+						<tr>
+							<td>Address:</td>
+							<td><input type="text" name="address" size="60"></td>
+						</tr>
+						<tr>
+							<td>City:</td>
+							<td><input type="text" name="address"></td>
+						</tr>
+						<tr>
+							<td>Notes:</td>
+							<td> <textarea rows="5" cols="62"> </textarea> </td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<hr>
+								<p align="center"> 
+									<input type="button" value="Submit New Companion" onclick="">
+									<input type="button" value="Cancel" onclick="location.href='CompanionMain.html'"> 
+								</p> 
+							</td>
+						</tr>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<script src="/_/js/vendor/jquery.js"></script>
+		<script src="/_/js/foundation.min.js"></script>
+		<script>
+		    $(document).foundation();
+		</script>
+	</body>
+</html>

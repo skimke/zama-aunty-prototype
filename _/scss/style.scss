@@ -1,0 +1,72 @@
+@import "_normalize.scss";
+@import "_foundation-min.scss";
+
+////////////////////////////////
+// ADD STUFF BELOW HERE
+////////////////////////////////
+
+
+// Variables
+// $navy: 				#333e52;
+// $offWhite: 			#f1f1f1;
+// $blueLight: 		#38abf4;
+// $steal: 			#d7dcdf;
+// $red: 				#d64f4d;
+
+* {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+h1,h2,h3,h4,h5,h6,strong,th {
+	font-family: 'Merriweather', serif;
+	font-weight: 600;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+@font-face {
+	font-family: "foundation-icons";
+	src: url("../css/fonts/foundation-icons.eot");
+	src: url("../css/fonts/foundation-icons.eot?#iefix") format("embedded-opentype"),
+		url("../css/fonts/foundation-icons.woff") format("woff"),
+		url("../css/fonts/foundation-icons.ttf") format("truetype"),
+		url("../css/fonts/foundation-icons.svg#fontcustom") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+.fi-arrow-down:before,
+.fi-arrow-up:before,
+.fi-pencil:before,
+.fi-check:before,
+.fi-plus:before,
+.fi-torso-female:before,
+.fi-torsos-female-male:before,
+.fi-layout:before {
+	font-family: "foundation-icons";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	text-decoration: inherit;
+}
+
+.fi-arrow-down:before { content: "\f109"; }
+.fi-arrow-up:before { content: "\f10c"; }
+.fi-pencil:before { content: "\f194"; }
+.fi-check:before { content: "\f126"; }
+.fi-plus:before { content: "\f199"; }
+.fi-magnifying-glass:before { content: "\f16c"; }
+.fi-torso-female:before { content: "\f1fd"; }
+.fi-torsos-female-male:before { content: "\f201"; }
+.fi-layout:before { content: "\f162"; }
+
+body {
+	background: #dddddd;
+}
