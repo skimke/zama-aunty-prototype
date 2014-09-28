@@ -1,0 +1,165 @@
+<html>
+	<header>
+		<title> MobilityAid </title>
+		<style> 
+			div.outerframe
+			{
+				background-color: #ffffff; 
+				position: absolute; 
+				left: 6%; 
+				width: 88%;
+				min-width: 100px;
+				height: 100%;
+				min-height: 100px;
+				margin-top: -10px; 
+				border: 4px solid #008f7f; 
+				border-radius: 10px;
+				border-bottom:none; 
+				border-top: none;
+			}
+			
+			 div.header
+			 {
+				background-color:#11cc7c; 
+				position: absolute; 
+				top:1.2%; 
+				left: 0.5%;
+				right: 0.5%;
+				height: 14%; 
+				opacity: 1; 
+				border: 2px ridge #11cc7c;
+				border-radius: 3px;
+			}
+			
+			div.headertext
+			{
+				background-color:#00cc7c; 
+				position: absolute; 
+				top:4%;
+				bottom: 4%;
+				left: 40%;  
+				opacity: 1; 
+				border: 1px solid #ffffff;
+				border-left: none;
+				border-right: none;
+				border-radius: 15px;
+				font-family: Comic Sans MS;
+				font-size: 60;
+				text-decoration: none;
+				text-align: left;
+				color: #ffffff;
+			 }
+			 
+			 div.NewsFeed
+			 {
+				background-color:#eeeeee; 
+				position: absolute; 
+				top: 23%;
+				bottom: 2%;
+				left: 0.5%;
+				right: 0.5%;  
+				opacity: 0.9; 
+				border: 2px solid #dddddd;
+				border-radius: 2px;
+			 }
+			 
+			 div.NewsFeedHeader
+			 {
+				background-color:#ffffff; 
+				position: absolute; 
+				top:16%;
+				height: 2%;
+				left: 0.5%;  
+				opacity: 0.9;
+			 }
+			 
+			 div.CommentHeader
+			 {
+				background-color:#dddddd; 
+				position: relative; 
+				left: 0%;
+				width: 100%;
+				height: 80%;
+				border: 1px solid #cccccc;
+				opacity: 1;
+			}
+			 
+			p.Heading
+			{
+				font-family: Comic Sans MS;
+				font-size: 30;
+			}
+			
+			a
+			{
+				font-family: Calibri;
+				font-size: 12;
+			}
+			
+			p.Heading
+			{
+				font-family: Comic Sans MS;
+				font-size: 30;
+			}
+		</style>
+	</header>
+	<body bgcolor="#dddddd">
+		<div class="outerframe">
+			<div class="header">
+				<div class="headertext">
+					MobilityAid
+				</div>
+			</div>
+			
+			<div class="NewsfeedHeader">
+				<p> 
+					<input type="button" value="ADD NEW ESCORT" onclick="location.href='AddNewEscort.html'"> 
+				</p>
+			</div>
+			
+			<div class="Newsfeed">
+				<p class="Heading" align="center"> ESCORT MANAGEMENT </p>
+				<div class="CommentHeader">
+					<table width="100%" cellpadding="10" border="1">
+						<tr>
+							<th width="20%"> NAME </td>
+							<th width="20%"> PHONE NUMBER </td>
+							<th width="50%"> ADDRESS </td>
+							<th width="10%"></td>
+						</tr>
+						
+						<tr>
+							<td> ESCORT NAME 1 </td>
+							<td> 1234567890 </td>
+							<td> 420 Gol Wali Saraq Ho Gee </td>
+							<td> <a href="">EDIT</a> | <a href="">REMOVE</a> </td>
+						</tr>
+						
+						<tr>
+							<td> ESCORT NAME 2 </td>
+							<td> 1234567890 </td>
+							<td> 420 Gol Wali Saraq Ho Gee </td>
+							<td> <a href="">EDIT</a> | <a href="">REMOVE</a> </td>
+						</tr>
+						
+						<tr>
+							<td> ESCORT NAME 3 </td>
+							<td> 1234567890 </td>
+							<td> 420 Gol Wali Saraq Ho Gee </td>
+							<td> <a href="">EDIT</a> | <a href="">REMOVE</a> </td>
+						</tr>
+						
+						<tr>
+							<td> ESCORT NAME 4 </td>
+							<td> 1234567890 </td>
+							<td> 420 Gol Wali Saraq Ho Gee </td>
+							<td> <a href="">EDIT</a> | <a href="">REMOVE</a></td>
+						</tr>
+						
+					</table>
+
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
