@@ -4,30 +4,35 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Zama Aunty - Main</title>
 		<link rel="stylesheet" href="_/css/style.css" />
-		<script src="/_/js/vendor/modernizr.js"></script>
+		<script src="_/js/vendor/modernizr.js"></script>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,300,600,400|Merriweather:400,300,300italic,400italic' rel='stylesheet' type='text/css'>
 	</head>
 	<header class="global">
-		
+		<div class="row">
+			<div class="columns large-2">
+				<img src="http://placehold.it/400x180&text=Logo">
+			</div>
+			<div class="columns large-10"></div>
+		</div>
 	</header>
-	<body>
+	<body class="login">
 		<section class="outerframe">
 			
-			<div class="Newsfeed">
-				<div class="CommentHeader">
+			<div class="row">
+				<div class="columns large-6 large-centered form-wrapper">
 					<form action="LoginForm.asp">
 						<label for="usrname">Username: </label>
 						<input type="text" name="usrname"><br>
 						<label for="psswrd">Password: </label>
 						<input type="password" name="psswrd"> <br>
-						<p align="center"> <input type="button" value="Submit" onclick="location.href='Admin.html'"> </p>
+						<p align="right"> <input type="button" class="button purple" value="Submit" onclick="location.href='Admin.html'"> </p>
 					</form>
 				</div>
 			</div>
 		</section>
 
-		<script src="/_/js/vendor/jquery.js"></script>
-		<script src="/_/js/foundation.min.js"></script>
+		<script src="_/js/vendor/jquery.js"></script>
+		<script src="_/js/foundation.min.js"></script>
 		<script>
 		    $(document).foundation();
 		</script>

@@ -4,93 +4,91 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Zama Aunty - Clients</title>
 		<link rel="stylesheet" href="_/css/style.css" />
-		<script src="/_/js/vendor/modernizr.js"></script>
+		<script src="_/js/vendor/modernizr.js"></script>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,300,600,400|Merriweather:400,300,300italic,400italic' rel='stylesheet' type='text/css'>
 	</head>
-	<header class="global">
-		<div class="row">
-		    <div class="columns large-6">
-		        <nav>
-		            <ul>
-		                <li>
-		                    <a class="current fi-layout" href="/Admin.html">Dashboard</a>
-		                </li>
-		                <li>
-		                    <a class="current fi-torso-female" href="/ClientMain.html">Clients</a>
-		                </li>
-		                <li>
-		                    <a class="fi-torsos-female-male" href="/CompanionMain.html">Companions</a>
-		                </li>
-		            </ul>
-		        </nav>
-		    </div>
-		    <div class="columns large-2">
-		        <nav>
-		            <ul class="settings">
-		                <li>
-		                    <a href="javascript:void(0)">Settings</a>
-		                </li>
-		            </ul>
-		        </nav>
-		    </div>
-		</div>
-	</header>
+	
 	<body>
-		<div class="outerframe">
-			
-			<div class="NewsfeedHeader">
-				<p> 
-					<input type="button" value="Add New Client" onclick="location.href='AddNewClient.html'"> 
-				</p>
+		<header class="global">
+			<div class="row">
+				<div class="columns large-2 lockup">
+					<img src="http://placehold.it/160x70&text=Logo">
+				</div>
+			    <div class="columns large-8">
+			        <nav>
+			            <ul>
+			                <li>
+			                    <a class="current fi-layout" href="Admin.html">Home</a>
+			                </li>
+			                <li>
+			                    <a class="fi-torso-female" href="ClientMain.html">Clients</a>
+			                </li>
+			                <li>
+			                    <a class="fi-torsos-female-male" href="ChaperoneMain.html">Chaperones</a>
+			                </li>
+			            </ul>
+			        </nav>
+			    </div>
+			    <div class="columns large-2">
+			        <nav>
+			            <ul class="settings">
+			                <li>
+			                    <a class="icon-menu-down" href="javascript:void(0)">Settings</a>
+			                </li>
+			            </ul>
+			        </nav>
+			    </div>
 			</div>
+		</header>
+		
+		<section class="outerframe">
 			
-			<div class="Newsfeed">
-				<p class="Heading" align="center"> Clients </p>
-				<div class="CommentHeader">
-					<table width="100%" cellpadding="10" border="1">
-						<tr>
-							<th width="20%"> NAME </td>
-							<th width="20%"> PHONE NUMBER </td>
-							<th width="50%"> ADDRESS </td>
-							<th width="10%"></td>
-						</tr>
-						
-						<tr>
-							<td> CLIENT NAME 1 </td>
-							<td> 1234567890 </td>
-							<td> 420 Gol Wali Saraq Ho Gee </td>
-							<td> <a href="">EDIT</a> | <a href="">REMOVE</a> </td>
-						</tr>
-						
-						<tr>
-							<td> CLIENT NAME 2 </td>
-							<td> 1234567890 </td>
-							<td> 420 Gol Wali Saraq Ho Gee </td>
-							<td> <a href="">EDIT</a> | <a href="">REMOVE</a> </td>
-						</tr>
-						
-						<tr>
-							<td> CLIENT NAME 3 </td>
-							<td> 1234567890 </td>
-							<td> 420 Gol Wali Saraq Ho Gee </td>
-							<td> <a href="">EDIT</a> | <a href="">REMOVE</a> </td>
-						</tr>
-						
-						<tr>
-							<td> CLIENT NAME 4 </td>
-							<td> 1234567890 </td>
-							<td> 420 Gol Wali Saraq Ho Gee </td>
-							<td> <a href="">EDIT</a> | <a href="">REMOVE</a></td>
-						</tr>
-						
-					</table>
-
+			<div class="row">
+			<div class="columns large-10 large-centered">
+				<h2 class="keyline"> Clients  <input class="button fr turquoise" type="button" value="Add New Chaperone" onclick="location.href='AddNewClient.html'"> </h2>
+				<table width="100%" class="data">
+					<tr>
+						<td width="20%"> <h5>NAME</h5> </td>
+						<td width="20%"> <h5>PHONE NUMBER</h5> </td>
+						<td width="40%"> <h5>ADDRESS</h5> </td>
+						<td width="30%"></td>
+					</tr>
+					
+					<tr>
+						<td> Jasmine Jahanghir </td>
+						<td> 1234567890 </td>
+						<td> 420 Gol Wali Saraq Ho Gee </td>
+						<td> <a href="">EDIT</a> | <a href="">REMOVE</a> </td>
+					</tr>
+					
+					<tr>
+						<td> Noor Gashkori </td>
+						<td> 1234567890 </td>
+						<td> 420 Gol Wali Saraq Ho Gee </td>
+						<td> <a href="">EDIT</a> | <a href="">REMOVE</a> </td>
+					</tr>
+					
+					<tr>
+						<td> Malalai Abdullah </td>
+						<td> 1234567890 </td>
+						<td> 420 Gol Wali Saraq Ho Gee </td>
+						<td> <a href="">EDIT</a> | <a href="">REMOVE</a> </td>
+					</tr>
+					
+					<tr>
+						<td> Farah Jahanzeb </td>
+						<td> 1234567890 </td>
+						<td> 420 Gol Wali Saraq Ho Gee </td>
+						<td> <a href="">EDIT</a> | <a href="">REMOVE</a></td>
+					</tr>
+					
+				</table>
 				</div>
 			</div>
-		</div>
+		</section>
 
-		<script src="/_/js/vendor/jquery.js"></script>
-		<script src="/_/js/foundation.min.js"></script>
+		<script src="_/js/vendor/jquery.js"></script>
+		<script src="_/js/foundation.min.js"></script>
 		<script>
 		    $(document).foundation();
 		</script>

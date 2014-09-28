@@ -1,0 +1,9 @@
+////////////////////////////////
+// Utility Mixins
+////////////////////////////////
+
+@mixin transition($effect...) {
+	-webkit-transition: $effect;
+   	   -moz-transition: $effect;
+			transition: $effect;
+}

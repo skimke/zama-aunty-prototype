@@ -2,7 +2,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Zama Aunty - Add New Client</title>
+		<title>Zama Aunty - Add New Chaperone</title>
 		<link rel="stylesheet" href="_/css/style.css" />
 		<script src="_/js/vendor/modernizr.js"></script>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,300,600,400|Merriweather:400,300,300italic,400italic' rel='stylesheet' type='text/css'>
@@ -44,14 +44,14 @@
 		<section class="outerframe">
 			
 			<div class="Newsfeed">
-				<p class="Heading" align="center"> New Client </p>
+				<p class="Heading" align="center"> New Chaperone </p>
 				<div class="CommentHeader">
 					<br>
-					<form action="NewClientForm.asp">
-					<div class="row">
+					<form action="NewChaperoneForm.asp">
+					<table cellspacing="10">
 						<tr>
 							<td colspan="2"> 
-								<b> Client Information </b>
+								<b> Chaperone Information </b>
 							</td>
 						</tr>
 						<tr>
@@ -74,57 +74,19 @@
 							<td>City:</td>
 							<td><input type="text" name="address"></td>
 						</tr>
-						<tr> <td colspan="2"> <hr> </td> </tr>
 						<tr>
-							<td colspan="2"> 
-								<b> Primary Contact Information </b>
-							</td>
-						</tr>
-						<tr>
-							<td> First Name: </td>
-							<td><input type="text" name="fname" size="30"></td>
-						</tr>
-						<tr>
-							<td> Last Name:</td>
-							<td><input type="text" name="lname" size="30"></td>
-						</tr>
-						<tr>
-							<td> Phone Number:</td>
-							<td><input type="tel" name="phone" size="11"></td>
-						</tr>
-						<tr>
-							<td>Relationship to Client:</td>
-							<td><input type="tel" name="text" size="20"></td>
-						</tr>
-						<tr> <td colspan="2"> <hr> </td> </tr>
-						<tr>
-							<td colspan="2"> 
-								<b> Approved Chaperone Information </b>
-							</td>
-						</tr>
-						<tr>
-							<td>Primary Chaperone:</td> 
-							<td>
-							<select>
-							  <option value="volvo">Volvo</option>
-							  <option value="saab">Sahab</option>
-							  <option value="opel">Hajomollah Adrak</option>
-							  <option value="audi">Audi</option>
-							</select>
-							<input type="button" value="Create New Chaperone Member Profile" onclick="location.href='AddNewChaperone.html'"> <br>
-							</td>
-						<tr>
-							<td colspan="2"><a href=""> Add More Chaperones </a></td>
+							<td>Notes:</td>
+							<td> <textarea rows="5" cols="62"> </textarea> </td>
 						</tr>
 						<tr>
 							<td colspan="2">
 								<hr>
 								<p align="center"> 
-									<input type="button" value="Submit New Client" onclick="">
-									<input type="button" value="Cancel" onclick="location.href='ClientMain.html'"> 
+									<input type="button" value="Submit New Chaperone" onclick="">
+									<input type="button" value="Cancel" onclick="location.href='ChaperoneMain.html'"> 
 								</p> 
 							</td>
-						</div>
+						</tr>
 					</form>
 				</div>
 			</div>

@@ -1,72 +1,374 @@
 @import "_normalize.scss";
 @import "_foundation-min.scss";
-
-////////////////////////////////
-// ADD STUFF BELOW HERE
-////////////////////////////////
+@import "_mixins.scss";
+@import "_fonts.scss";
 
 
 // Variables
-// $navy: 				#333e52;
-// $offWhite: 			#f1f1f1;
-// $blueLight: 		#38abf4;
-// $steal: 			#d7dcdf;
-// $red: 				#d64f4d;
+$black: 			#2C2A38;
+$white: 			#FFFFFF;
+$steel: 			#444444;
+$purpleDark: 		#382581;
+$purple: 			#6B34A1;
+$purpleLight: 		#FBF6FF;
+$purpleHighlight: 	#CEAFED;
+$purpleKeyline: 	#9890B5;
+$grey: 				#A7A7A8;
+$greyDark: 			#575560;
+$red: 				#E25151;
+$offWhite: 			#F8F8F8;
+$green: 			#34A167;
+$yellow: 			#CDAF4B;
+$turquoise: 		#34A19E;
 
 * {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 }
 
-h1,h2,h3,h4,h5,h6,strong,th {
+h1 {
 	font-family: 'Merriweather', serif;
+	font-weight: 300;
+	font-size: 40px;
+	color: $steel;
+	margin: 36px 0 26px;
+}
+
+p {
+	font-size: 16px;
+	font-weight: 400;
+	color: $steel;
+	line-height: 1.6875;
+
+	&.label {
+		font-family: 'Open Sans', sans-serif;
+		border-radius: 10px;
+		background: $turquoise;
+	}
+
+	&.fr {
+		padding-top: 10px;
+		text-align: right;
+	}
+}
+
+h2,h3,h4,h5,h6,strong,th,a {
+	font-family: 'Open Sans', sans-sserif;
+	margin: 34px 0 24px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+
+	&.keyline {
+		position: relative;
+		padding-bottom: 8px;
+
+		&:before{
+			content:"";
+			width: 100%;
+			height: 1px;
+			background: $purpleKeyline;
+			position: absolute;
+			bottom: 0;
+		}
+	}
+
+}
+
+h2 {
+	font-weight: 300;
+	font-size: 30px;
+	color: $black;
+}
+
+h3 {
+	font-weight: 400;
+	font-size: 22px;
+	color: $steel;
+}
+
+h4 {
+	font-weight: 300;
+	font-size: 18px;
+	color: $steel;
+}
+
+h5, h6, meta {
+	text-transform: uppercase;
+}
+
+h5, h6 {
+	font-size: 16px;
+	color: $greyDark;
+}
+
+meta {
+	font-size: 14px;
+	color: $steel;
+}
+
+a {
 	font-weight: 600;
+	color: $purple;
+
+	&:hover {
+		color: #AC96C2;
+	}
 }
 
 .underline {
 	text-decoration: underline;
 }
 
-@font-face {
-	font-family: "foundation-icons";
-	src: url("../css/fonts/foundation-icons.eot");
-	src: url("../css/fonts/foundation-icons.eot?#iefix") format("embedded-opentype"),
-		url("../css/fonts/foundation-icons.woff") format("woff"),
-		url("../css/fonts/foundation-icons.ttf") format("truetype"),
-		url("../css/fonts/foundation-icons.svg#fontcustom") format("svg");
-	font-weight: normal;
-	font-style: normal;
-}
-
-.fi-arrow-down:before,
-.fi-arrow-up:before,
-.fi-pencil:before,
-.fi-check:before,
-.fi-plus:before,
-.fi-torso-female:before,
-.fi-torsos-female-male:before,
-.fi-layout:before {
-	font-family: "foundation-icons";
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	display: inline-block;
-	text-decoration: inherit;
-}
-
-.fi-arrow-down:before { content: "\f109"; }
-.fi-arrow-up:before { content: "\f10c"; }
-.fi-pencil:before { content: "\f194"; }
-.fi-check:before { content: "\f126"; }
-.fi-plus:before { content: "\f199"; }
-.fi-magnifying-glass:before { content: "\f16c"; }
-.fi-torso-female:before { content: "\f1fd"; }
-.fi-torsos-female-male:before { content: "\f201"; }
-.fi-layout:before { content: "\f162"; }
-
 body {
-	background: #dddddd;
+	background: $white;
+
+	&.login {
+		background: $purpleLight;
+	}
+}
+
+header.global {
+	background: $purpleDark;
+	padding: 16px 0;
+
+	.lockup {
+
+		img { 
+			display: block;
+		}
+	}
+
+	a {
+		color: $white;
+		font-weight: 400;
+		@include transition(color, 0.4s, ease);
+
+		&:hover {
+			color: darken($offWhite, 15);
+		}
+	}
+
+	nav {
+
+		ul {
+			list-style: none;
+			position: relative;
+			margin-left: 0;
+
+			li {
+				position: relative;
+				display: inline-block;
+				float: left;
+				margin-right: 30px;
+			}
+
+			a {
+				font-weight: 600;
+
+				&:before {
+					font-size: 27px;
+					vertical-align: middle;
+					margin-top: -4px;
+					padding-right: 10px;
+				}
+			}
+
+			&.settings {
+				text-align: right;
+
+				ul li {
+					margin-right: 0;
+				}
+
+				a {
+					font-weight: 600;
+
+					&:before {
+						font-size: 6px;
+						position: absolute;
+						right: 0;
+						margin-right: -26px;
+						margin-top: 6px;
+					}
+				}
+			}
+		}
+	}
+}
+
+table {
+	border: none;
+
+	h5 {
+		margin: 0;
+		color: $black;
+	}
+
+	tr:nth-of-type(even) {
+		background: none;
+	}
+
+	td {
+		color: $steel;
+	}
+
+	a {
+		@include transition(all, 0.4s, ease);
+	}
+
+	&.actionable {
+		float: left;
+
+		td {
+
+			strong {
+				font-size: 18px;
+				font-weight: 300;
+				color: $greyDark;
+			}
+
+			&:nth-child(2) {
+				text-align: right;
+			}
+		}
+	}
+
+	&.data {
+
+		p {
+			margin: 0;
+		}
+
+		td {
+			padding: 16px;
+		}
+
+		tr {
+			border: 3px solid $white;
+			background: $purpleLight;
+
+			&:nth-child(1) {
+				background: $white;
+			}
+		}
+	}
+
+	&.clickable {
+
+		tr {
+
+			td:nth-child(2) {
+				text-align: right;
+			}
+
+			&:hover {
+				background: $offWhite;
+				cursor: pointer;
+
+				a {
+					color: darken($purple, 15);
+					text-decoration: underline;
+				}
+			}
+		}
+
+	}
+}
+
+.form-wrapper {
+	padding: 60px 80px;
+	background: $white;
+	margin-top: 50px;
+	border-radius: 6px;
+}
+
+label {
+	font-size: 17px;
+	color: $greyDark;
+	font-weight: 400;
+	padding: 4px 0;
+}
+
+input[type="button"] {
+	border: none;
+	border-radius: 3px;
+	font-size: 16px;
+	font-weight: 300;
+	text-transform: uppercase;
+	padding: 12px 32px;
+}
+
+.button {
+	@include transition(all, 0.4s, ease);
+
+	&.red {
+		background: $red;
+		color: lighten(#E59595, 25);
+
+		&:hover {
+			background: lighten($red, 5);
+			color: $white;
+		}
+	}
+
+	&.turquoise {
+		background: $turquoise;
+		color: $white;
+
+		&:hover {
+			background: lighten($turquoise, 5);
+			color: $white;
+		}
+	}
+
+	&.purple {
+		background: $purple;
+		color: $purpleHighlight;
+
+		&:hover {
+			background: lighten($purple, 5);
+			color: $purpleLight;
+		}
+	}
+
+	&.yellow {
+		background: $yellow;
+		color: lighten(#D0BE7F, 25);
+
+		&:hover {
+			background: lighten($yellow, 5);
+			color: $white;
+		}
+	}
+
+	&.fr {
+		padding: 9px 27px;
+		float: right;
+	}
+}
+
+form, .form-wrapper {
+
+	input[type="text"], input[type="tel"], input[type="password"] {
+		box-shadow: none;
+		border-radius: 3px;
+		border: 1px solid $grey;
+		padding: 0 14px;
+		height: 40px;
+
+		&:hover {
+			border: 1px solid $greyDark;
+		}
+
+		&:focus {
+			border: 1px solid $purple;
+			box-shadow: none;
+			background: $white;
+		}
+
+		&.error {
+			border: 1px solid $red;
+		}
+	}
 }
