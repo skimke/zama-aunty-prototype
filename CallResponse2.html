@@ -33,7 +33,7 @@
 			        <nav>
 			            <ul class="settings">
 			                <li>
-			                    <a class="icon-menu-down" href="javascript:void(0)">Settings</a>
+			                    <a class="icon-menu-down" href="javascript:void(0)">Aisha Khan</a>
 			                </li>
 			            </ul>
 			        </nav>
@@ -42,52 +42,40 @@
 		</header>
 		<section class="outerframe">
 			
-			<div class="Newsfeed">
-				<p class="Heading" align="center"> CALL RESPONSE CENTER </p>
+			<div class="row">
+				<div class="columns large-10 large-centered">
+				<h2 class="keyline"> Call Response Center </h2>
 				<div class="CommentHeader">
 					<br>
 					<form action="NewClientForm.asp">
-					<div class="row">
-						<tr>
-							<td>
-								First Name
-							</td>
-							<td>
-								<input type="text" name="fname" size="63" value="Fatimah">
-							</td>
-							<td>
-								Last Name
-							</td>
-							<td>
-								<input type="text" name="lname" size="64" value="Khan">
-							</td>
-						</tr>
-						<tr>
-							<td>
-								Address
-							</td>
-							<td colspan="3">
-								<input type="text" name="fname" size="145" value="1234 XYZ Street">
-							</td>
-						</tr>
-						<tr>
-							<td colspan="4">
-								<p align="right">
-									<input type="button" value="Search" onclick="">
-								</p>
-							</td>
-						</tr>
-					</div>
+					<label>
+						First Name
+						<input type="text" name="fname" size="63" value="Fatimah">
+					</label>
+					<label>
+						Last Name
+						<input type="text" name="lname" size="64" value="Khan">
+					</label>
+					<label>
+						Address
+						<input type="text" name="fname" size="145" value="1234 XYZ Street">
+					</label>
+					<p align="right">
+						<input type="button" class="button purple" value="Search" onclick="">
+					</p>
 					</form>
 				</div>
-			</div>
+			</section>
 			
-			<div class="InfoDisplay">
+			<section class="InfoDisplay">
+				
+				<div class="row">
+				<div class="columns large-10 large-centered">
 				<table>
 					<table cellspacing="10" width="100%">
 						<tr>
 							<td colspan="8"> 
-								<b> Client Information </b>
+								<h4> Client Information </h4>
 							</td>
 						</tr>
 						<tr>
@@ -100,7 +88,7 @@
 						<tr> <td colspan="8"> <hr> </td> </tr>
 						<tr>
 							<td colspan="8"> 
-								<b> Approved Escort Information </b>
+								<h4> Approved Escort Information </h4>
 							</td>
 						</tr>
 						<tr>
@@ -150,7 +138,7 @@
 						<tr> <td colspan="8"> <hr> </td> </tr>
 						<tr>
 							<td colspan="8"> 
-								<b> Primary Contact Information </b>
+								<h4> Primary Contact Information </h4>
 							</td>
 						</tr>
 						<tr>
@@ -163,13 +151,15 @@
 							<td colspan="8">
 								<hr>
 								<p align="center"> 
-									<input type="button" value="Escort Request Complete" onclick="location.CallResponse3.html">
-									<input type="button" value="Cancel" onclick="location.href='ClientMain.html'"> 
+									<input type="button" class="button red" value="Cancel" onclick="location.href='ClientMain.html'"> 
+									<input type="button" class="button turquoise" value="Escort Request Complete" onclick="location.href='CallResponse3.html'">
 								</p> 
 							</td>
 						</tr>
 				</table>
-			</div>
+				</div>
+				</div>
+			</section>
 		</div>
 	</body>
 </html>

@@ -33,7 +33,7 @@
 			        <nav>
 			            <ul class="settings">
 			                <li>
-			                    <a class="icon-menu-down" href="javascript:void(0)">Settings</a>
+			                    <a class="icon-menu-down" href="javascript:void(0)">Aisha Khan</a>
 			                </li>
 			            </ul>
 			        </nav>
@@ -43,54 +43,40 @@
 
 		<section class="outerframe">
 			
-			<div class="Newsfeed">
-				<p class="Heading" align="center"> New Chaperone </p>
-				<div class="CommentHeader">
-					<br>
-					<form action="NewChaperoneForm.asp">
-					<table cellspacing="10">
-						<tr>
-							<td colspan="2"> 
-								<b> Chaperone Information </b>
-							</td>
-						</tr>
-						<tr>
-							<td>First Name: </td>
-							<td><input type="text" name="fname" size="30"></td>
-						</tr>
-						<tr>
-							<td>Last Name:</td>
-							<td><input type="text" name="lname" size="30"></td>
-						</tr>
-						<tr>
-							<td>Phone Number:</td>
-							<td><input type="tel" name="phone" size="11"></td>
-						</tr>
-						<tr>
-							<td>Address:</td>
-							<td><input type="text" name="address" size="60"></td>
-						</tr>
-						<tr>
-							<td>City:</td>
-							<td><input type="text" name="address"></td>
-						</tr>
-						<tr>
-							<td>Notes:</td>
-							<td> <textarea rows="5" cols="62"> </textarea> </td>
-						</tr>
-						<tr>
-							<td colspan="2">
-								<hr>
-								<p align="center"> 
-									<input type="button" value="Submit New Chaperone" onclick="">
-									<input type="button" value="Cancel" onclick="location.href='ChaperoneMain.html'"> 
-								</p> 
-							</td>
-						</tr>
-					</form>
-				</div>
+			<div class="row">
+				<div class="columns large-10 large-centered">
+				<h2 class="keyline"> New Chaperone </h2>
+				<form action="NewChaperoneForm.asp">
+				
+					<h4> Chaperone Information </h4>
+					
+					<label>
+						First Name:<input type="text" name="fname" size="30"></label>
+					
+					<label>
+						Last Name:<input type="text" name="lname" size="30"></label>
+					
+					<label>
+						Phone Number:<input type="tel" name="phone" size="11"></label>
+					
+					<label>
+						Address:<input type="text" name="address" size="60"></label>
+					
+					<label>
+						City:<input type="text" name="address"></label>
+					
+					<label>
+						Notes:
+						<textarea rows="5" cols="62"> </textarea> </label>
+					<hr>
+					<p align="center"> 
+						<input type="button" class="button red" value="Cancel" onclick="location.href='ChaperoneMain.html'"> 
+						<input type="button" class="button turquoise" value="Submit New Chaperone" onclick="location.href='ChaperoneMain.html'">
+					</p>
+				</form>
 			</div>
-		</div>
+			</div>
+		</section>
 
 		<script src="_/js/vendor/jquery.js"></script>
 		<script src="_/js/foundation.min.js"></script>
